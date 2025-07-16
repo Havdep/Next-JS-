@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -14,29 +15,23 @@ const page = () => {
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors"
-              >
-                Home
-              </a>
-              <a
-                href="#"
+                href="/about"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 About
               </a>
-              <a
-                href="#"
+              <Link
+                href="/blog"
                 className="text-gray-300 hover:text-white transition-colors"
               >
-                Routing
-              </a>
-              <a
-                href="#"
+                Blog
+              </Link>
+              <Link
+                href="/contact"
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
