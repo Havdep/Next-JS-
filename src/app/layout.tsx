@@ -27,7 +27,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <header className="bg-gray-800 text-blue-400 font-bold text-xl px-6 py-4 shadow-md">
+          Nipun's Header
+        </header>
+
+        {/* Main Content */}
+        <main className="flex-grow">{children}</main>
+
+        {/* Footer */}
+        <footer className="bg-gray-800 text-gray-400 text-sm text-center px-6 py-4 mt-10">
+          © {new Date().getFullYear()} Nipun Kumar. All rights reserved.
+        </footer>
       </body>
     </html>
   );
